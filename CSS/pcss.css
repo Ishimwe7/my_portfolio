@@ -1,0 +1,168 @@
+/* ===== HEADER STYLES */
+
+.container{
+    width: 100%;
+    margin: 0px;
+    border: 0;
+    border-radius: 5px;
+    height: 150px;
+    position: sticky;
+    bottom: 0;
+}
+.header{
+   /* position: relative; */
+    background-color: white;
+    margin: 0;
+    height: 50px;
+    line-height: 58px;
+    align-items: center;
+    padding-bottom: 30px;
+    align-items: center;
+    width: 100%;
+    display: inline-block;
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px ;
+}
+ .header .logo{
+    padding-left: 20px;
+    float: left;
+}
+.header .logo::first-letter{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.header .logo:hover{
+    cursor: pointer;
+    
+}
+.header .access{
+    position: relative;
+    float: right;
+    display: flex;
+    margin-right: 12px;
+}
+.header .access a{
+     text-decoration: none;
+     color: white;
+     padding: 5px 10px;
+     margin-left: 2px;
+     background-color: black;
+     border: 1px solid black;
+     background-clip: padding-box;
+     border-radius: 20px;
+     opacity: 0.4;
+}
+.header .access a:hover{
+    color: black;
+    background-color: white;
+    opacity: 1.0;
+    border: none;
+}
+.menu{
+    /* position: sticky;
+    z-index: 222;
+    top: 80px; */
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    float: right;
+    margin-top: 0px;
+    padding-right: 10px;
+    border-bottom-right-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+}
+
+.menu ul{
+    float: right; 
+    display: flex;
+    align-items: baseline;
+}
+.menu ul li{
+    padding: 10px;
+    list-style: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+/* ======= BODY STYLES */
+
+body{
+    background-color: white;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.content{
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    background-color: grey;
+}
+
+/* ===== SIDE BAR STYLES =====*/
+
+.content .sideBar{
+    height: 500px;
+    width: 200px;
+    overflow: scroll;
+    color: white;
+    float: left;
+    background-color: rgb(13, 12, 12);
+    margin-left: 2px;
+    margin-top: 2px;
+    border-radius: 10px;
+    position:sticky;
+    top: 78px;
+    z-index: 222;
+}
+.content .heads{
+    text-align: center;
+    text-decoration: underline;
+}
+.heads:hover{
+    cursor: pointer;
+}
+
+/* Other content */
+
+.content .other{
+    background-color: white;
+    position: relative;
+    height:1000px;
+    width: 1115px;
+    padding: 10px 10px;
+    margin-left: 3px;
+    margin-top: 3px;
+    border-radius: 20px;
+    margin-right: 0;
+}
+.content .sideBar .category{
+    color: inherit;
+    font-weight: bolder;
+    font-size: 18px;
+    justify-content: left;
+    margin: 0;
+}
+
+/* Responsive styles */
+
+@media(max-width: 600px) {
+    .header{
+        gap: 40%;
+    }
+    .sideBar{
+        display: none;
+    }
+}

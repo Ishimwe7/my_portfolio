@@ -1,0 +1,340 @@
+li{
+    display: flex;
+    float: left;
+    padding: 20px 15px;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+.menu{
+    background-color: aqua;
+    margin-left: 30px;
+    margin-top: 80px;
+
+}
+.container{
+    background-color: aqua;
+    display: flex;
+    gap: 40%;
+    border-radius: 8px;
+}
+img{
+    border-radius: 50%;
+    height: 4cm;
+}
+.whole{
+    display: flex;
+    gap: 4cm;
+    font-size: large;
+
+}
+.founder{
+    padding-left: 20px;
+    margin-left: 10px;
+}
+.contacts{
+    justify-content: center;
+    text-align: center;
+}
+h1{
+  text-decoration: underline;  
+}
+a:hover{
+    color: white;
+}
+.image{
+    border-radius: 10px;
+    width: 100%;
+     height: 250px;
+}
+.title{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.description{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.gal{
+    width: 200px;
+    margin: 6px;
+    text-align: center;
+    width: calc(25% - 20px);
+}
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin: 8px;
+}
+.index{
+    margin-top: 100px;
+    text-align: center;
+}
+.foot{
+    display: flex;
+    padding: 1px 1px ;  
+    justify-content: center;
+    font-size: medium;
+    font-weight: bold;
+}
+.contact{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: left;
+    font-size: medium;
+}
+.qlinks a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+.qlinks a:hover{
+    color: white;
+    display: flex;
+}
+.footer{
+    margin-bottom: 1px; 
+    border-top: 2px solid rgb(92, 39, 2);
+    background-color:aquamarine;
+    border-radius: 10px;
+}
+.rights{
+    font-size: larger;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.head{
+    display: flex;
+    gap: 40%;
+}
+form{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align: left;
+    padding: 0 20px;
+
+}
+
+.row{
+    padding: 5px;
+    margin-top: 5px;
+}
+#special-row{
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.buttons{
+    text-align: center;
+    margin: 10px;
+}
+
+button{
+    font-size: xx-large;
+    background-color: #8FBC8B; 
+    border-radius: 8px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.row input{
+    font-size: x-large;
+}
+.row #password{
+    width: 420px;
+}
+select{
+    font-size: x-large;
+}
+.home{
+    text-align: center;
+    margin: auto auto;
+}
+.home a{
+    text-decoration: none;
+    color: #8FBC8B;
+}
+ a:hover{
+    color: black;
+}
+ .row label{
+    font-weight: bold;
+}
+.required{
+    color: red;
+    font-size: large;
+}
+
+textarea{
+    width: 200px;
+    height: 100px;
+}
+
+
+.signUp{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 650px;
+    margin: auto auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.log-home{
+    margin-top: 100px;
+    margin-left: 250px;
+    margin: 100px auto;
+}
+.sign-home{
+    margin: auto auto;
+}
+
+#heading1{
+   font-size: 40px;
+   color: #8FBC8B;
+   text-decoration: underline;
+}
+#heading1:hover{
+   cursor: pointer;
+}
+#loc{
+    text-align: center;
+}
+
+
+
+/* ================================================== */
+
+
+
+
+.whole-page{
+    display: flex;
+}
+
+#logo{
+    position: fixed;
+    top: 0;
+}
+
+.signUp{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 650px;
+    margin: auto auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.log-home{
+    margin-top: 100px;
+    margin-left: 250px;
+    margin: 100px auto;
+}
+.sign-home{
+    margin: auto auto;
+}
+
+.login{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 520px;
+    margin: auto auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ .log-text::first-letter{
+    font-size: 50px;
+    font-weight:900;
+} 
+
+ .log-text:hover{
+    cursor: pointer;
+}
+.log-text{
+    margin: 0;
+    padding-top: 0;
+}
+ #heading1{
+    font-size: 40px;
+    color: #8FBC8B;
+    text-decoration: underline;
+}
+#heading1:hover{
+    cursor: pointer;
+}
+
+form{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align: left;
+    padding: 0 20px;
+
+}
+
+.row{
+    padding: 5px;
+    margin-top: 5px;
+}
+#special-row{
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.buttons{
+    text-align: center;
+    margin: 10px;
+}
+
+button{
+    font-size: xx-large;
+    background-color: #8FBC8B; 
+    border-radius: 8px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.row input{
+    font-size: x-large;
+}
+.row #password{
+    width: 420px;
+}
+select{
+    font-size: x-large;
+}
+.home{
+    text-align: center;
+    margin: auto auto;
+}
+.home a{
+    text-decoration: none;
+    color: #8FBC8B;
+}
+ a:hover{
+    color: black;
+}
+ .row label{
+    font-weight: bold;
+}
+.required{
+    color: red;
+    font-size: large;
+}
+
+textarea{
+    width: 200px;
+    height: 100px;
+}
