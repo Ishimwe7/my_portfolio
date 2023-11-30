@@ -159,6 +159,8 @@ select{
 .home{
     text-align: center;
     margin: auto auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .home a{
     text-decoration: none;
