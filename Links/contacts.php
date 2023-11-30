@@ -3,25 +3,25 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "ict_in_agriculture";
+$database = "portfolio";
 $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die("Error: " . mysqli_connect_error());
 } else{
 if(isset($_POST["Send"])){
-if(!isset($_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['specialization'],$_POST['message'])){
+if(!isset($_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['address'],$_POST['message'])){
     $message='Empty filed(s)';
     echo 'Empty filed(s)';
     exit();
 } else{
-if(empty($_POST['fname']) || empty($_POST['lname'])||empty($_POST['email'])||empty($_POST['province'])||empty($_POST['district'])||empty($_POST['address'])||empty($_POST['specialization'])||empty($_POST['message'])){
+if(empty($_POST['fname']) || empty($_POST['lname'])||empty($_POST['email'])||empty($_POST['address'])||empty($_POST['message'])){
     $message='There is Empty Value(s)';
     echo 'There is Empty Value(s)';
     exit();
 } 
 else{
-       if($stmt = $conn->prepare('INSERT INTO user_messages(fname, lname, email, province, district, address, specialization, message) values(?,?,?,?,?,?,?,?)')) {
-        $stmt->bind_param('ssssssss',$_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['province'],$_POST['district'],$_POST['address'],$_POST['specialization'],$_POST['message']);
+       if($stmt = $conn->prepare('INSERT INTO messages(fname, lname, email,address, message) values(?,?,?,?,?)')) {
+        $stmt->bind_param('sssss',$_POST['fname'],$_POST['lname'],$_POST['email'],$_POST['address'],$_POST['message']);
         $stmt->execute();
         $message='Message SentSuccessfully!!';
         //echo "alert('Form submitted successfully!');";
